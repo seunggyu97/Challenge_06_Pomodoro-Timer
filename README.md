@@ -22,6 +22,7 @@ SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 �
 * ConstraintLayout
 * CountDownTimer
 * SoundPool
+  * <https://developer.android.com/reference/android/media/SoundPool>
   * **선언**
      ``` kotlin
     private val soundPool = SoundPool.Builder().build()
@@ -40,13 +41,27 @@ SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 �
      
     **제어**
      ``` kotlin
-     soundPool.autoPause()
+     override fun onPause() {
+        super.onPause()
+        soundPool.autoPause()
+     }
      ```
      * Pause()는 soundPool.play에서 리턴한 값(Stream)만을 중지하고, autoPause은 현재 활성화된 모든 Stream을 전체 중지한다. 이 앱에서는 따로 구분할 필요가 없기 때문에 autoPause()를 사용했다.
      ``` kotlin
-     soundPool.autoResume()
+     override fun onResume() {
+        super.onResume()
+        soundPool.autoResume()
+     }
      ```
      * Stream 재개
+    
+    **종료**
+     ``` kotlin
+     override fun onDestroy() {
+        super.onDestroy()
+        soundPool.release()
+     }
+     ```
      
 * WindowBackground
   * themes
@@ -55,5 +70,8 @@ SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 �
     ```
      * xml단에서도 background를 설정할 수 있지만 이 경우 해당 액티비티의 LifeCycle에 맞춰 onCreate 상태에서부터 background가 적용되기 때문에 onCreate이전에는 적용되지 않는다.
      * themes에서 windowBackground으로 초기 설정을 할 수 있다.
+* Vector Image
+  * Vector Drawable은 처음 로드할 때 같은 래스터 이미지보다 CPU 사이클이 더 많이 소모될 수 있다.
+  * 벡터 이미지는 최대 200 x 200dp 로 제한하는 것이 좋다. 이 이상인 경우 로드하는데 너무 오랜 시간이 걸릴 수 있다.
 # 실행화면
 
