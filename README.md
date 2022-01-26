@@ -47,7 +47,13 @@ SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 �
      soundPool.autoResume()
      ```
      * Stream 재개
-    
-
+     
+* WindowBackground
+  * themes
+    ``` kotlin
+    <item name="android:windowBackground">@color/pomodoro_red</item>
+    ```
+     * xml단에서도 background를 설정할 수 있지만 이 경우 해당 액티비티의 LifeCycle에 맞춰 onCreate 상태에서부터 background가 적용되기 때문에 onCreate이전에는 적용되지 않는다.
+     * themes에서 windowBackground으로 초기 설정을 할 수 있다.
 # 실행화면
 
