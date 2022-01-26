@@ -3,7 +3,7 @@
 
 '뽀모도로'는 이탈리아어로 토마토를 뜻한다. 프란체스코 시릴로가 대학생 시절 토마토 모양으로 생긴 요리용 타이머를 이용해 25분간 집중 후 휴식하는 일처리 방법을 제안한데서 그 이름이 유래했다.
 
-SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 타이머가 실행된다.
+뽀모도로 타이머는 SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 타이머가 실행된다.
 
 타이머가 0초에 도달하면 벨소리를 울리고 타이머를 종료한다.
 
@@ -74,4 +74,5 @@ SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 �
   * Vector Drawable은 처음 로드할 때 같은 래스터 이미지보다 CPU 사이클이 더 많이 소모될 수 있다.
   * 벡터 이미지는 최대 200 x 200dp 로 제한하는 것이 좋다. 이 이상인 경우 로드하는데 너무 오랜 시간이 걸릴 수 있다.
 # 실행화면
-<img src="https://user-images.githubusercontent.com/74666576/151050195-ddcd60b4-070e-4905-9ac6-9157e252a32f.jpg" width="270" height="500">
+<img src="https://user-images.githubusercontent.com/74666576/151254776-312b8149-eaa4-4b48-8bd7-1ea80af09441.jpg" width="270" height="500">
+<img src="https://user-images.githubusercontent.com/74666576/151254789-340d15cb-16d9-4e85-9816-c4e044ee42ac.gif" width="270" height="500">
