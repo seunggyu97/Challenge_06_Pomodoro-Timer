@@ -74,4 +74,4 @@ SeekBar를 좌우로 이동하여 시간을 설정한 뒤 손을 떼는 즉시 �
   * Vector Drawable은 처음 로드할 때 같은 래스터 이미지보다 CPU 사이클이 더 많이 소모될 수 있다.
   * 벡터 이미지는 최대 200 x 200dp 로 제한하는 것이 좋다. 이 이상인 경우 로드하는데 너무 오랜 시간이 걸릴 수 있다.
 # 실행화면
-
+<img src="https://user-images.githubusercontent.com/74666576/151050195-ddcd60b4-070e-4905-9ac6-9157e252a32f.jpg" width="270" height="500">
